@@ -1,0 +1,54 @@
+body {
+  padding-top: 20px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.terminal {
+  }
+.terminal-input {
+  padding-left: 70px;
+  padding-top: 15px;
+  border-top: 1px solid #ddd;
+  margin-top: 15px;
+}
+
+
+.terminal-monitor {
+  max-height: 70vh;
+  overflow: auto;
+  .message {
+    margin-top: 0.3em;
+  }
+  .message-type {
+    display: inline-block;
+    width: 70px;
+    text-align: right;
+    vertical-align: top;
+    &:hover {
+      span {
+        width: 70px;
+        color: white;
+        border-radius: 0.25em;
+        top: 0;
+        height: 16px;
+      }
+    }
+    span {
+      display: inline-block;
+      color: transparent;
+      width: 10px;
+      position: relative;
+      height: 13px;
+      top: 1px;
+      overflow: hidden;
+      border-radius: 50%;
+      transition: all 0.2s;
+    }
+  }
+  .message-text {
+    padding-left: 5px;
+    display: inline-block;
+    width: calc(100% - 80px);
+  }
+}

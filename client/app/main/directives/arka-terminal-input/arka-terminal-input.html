@@ -1,0 +1,16 @@
+<div>
+  <form class="row terminal-input" ng-init="messageToSend = ''" ng-submit="sendMessage(messageToSend);messageToSend=''">
+    <div class="col-xs-10">
+      <input class="form-control" placeholder="Enter message..." ng-model="messageToSend" type="text"/>
+    </div>
+    <button class="btn btn-primary col-xs-2" type="submit">Send</button>
+  </form>
+  <div class="row">
+    <div class="col-xs-12">
+      <br/><br/>
+      <a class="btn btn-primary" href="" ng-click="reconnect()">
+        Reconnect
+      </a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="terminal-monitor">
+  <ul class="message-list list-unstyled">
+    <li class="message message-{{message.type}}" ng-repeat="message in main.messages">
+      <div class="message-type" >
+        <span class="label" ng-class="{'label-default': message.type === 'system', 'label-info': message.type === 'standard'}">{{message.type}}</span>
+      </div>
+      <div class="message-text" ng-bind-html="message.message | trustAsHtml">
+        <!--{{message.message}}-->
+      </div>
+    </li>
+  </ul>
+</div>
